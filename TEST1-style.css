@@ -1,0 +1,302 @@
+body{
+    font-size:14px;
+    margin:0px;
+}
+
+header{
+    position:absolute;
+    width:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.headerBox{
+    display:flex;
+    justify-content:space-between;
+    margin:0px 35px;
+}
+
+.headerLogoImg{
+   display:block;
+   height:20px;
+}
+
+.headerList{
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+    margin:0px;
+}
+
+.headerListContent{
+    margin-right:40px;
+}
+
+.headerListInterview{
+    margin-right:40px;
+}
+
+.headerListFaq{
+    margin-right:40px;
+}
+
+.headerListRecuruit{
+    margin-right:40px;
+}
+
+.headerListDocument{
+    margin-right:40px;
+}
+
+.headerListContactLink{
+    color:white;
+    font-size:12px;
+    height:40px;
+    background-color:orange;
+    border-radius:25px;
+    padding:0px 20px;
+    display:flex;
+    align-items:center;
+}
+
+.headerListJapanese{
+    font-size:10px;
+}
+    
+.hamburgerMenu{
+    width:30px;
+    height:21px;
+    position:relative;
+}
+.hamburgerMenu span{
+    position:absolute;
+    width:30px;
+}
+
+.hamburgerMenu span:nth-of-type(1){
+    top:0%;
+    height:3px;
+    background-color:black;
+}
+
+.hamburgerMenu span:nth-of-type(2){
+    top:4px;
+    font-size:10px;
+    font-weight:700;
+    text-align:center;
+}
+
+.hamburgerMenu span:nth-of-type(3){
+    top:100%;
+    height:3px;
+    background-color:black;
+}
+
+
+a{
+    color:black;
+    text-decoration:none;
+}
+
+a:hover{
+    opacity:0.8;
+}
+
+.firstView{
+    padding-top:80px;
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-position:center;
+    background-size:cover;
+}
+
+.firstViewImg{
+    width:100%;
+}
+.firstViewBox{
+    padding:0px 50px;
+    width:fit-content;
+}
+
+h1{
+    font-size:40px;
+    text-align:center;
+}
+
+.firstViewBox2{
+    display:flex;
+    align-items:center;
+}
+
+.firstViewBox3{
+    margin-top:20px;
+    display:flex;
+    
+}
+
+.firstViewBox3 a{
+    align-items:center;
+    font-size:16px;
+    height:60px;
+    border-radius:30px;
+    display:flex;
+    justify-content:center;
+    
+}
+
+.counsellingHere{
+    color:white;
+    margin-right:15px;
+    background-color:orange;
+    width:300px;
+}
+
+.documentHere{
+    color:black;
+    background-color:white;
+    border:1px solid #e0e0e0;
+    width:170px;
+}
+
+.firstViewSupplement{
+    font-size:12px;
+    color:#a2a2a4;
+    padding-top:40px;
+    padding-bottom:20px;
+    padding-left:50px;
+    margin:0px;
+    margin-right:50px;
+}
+
+.aboutPotepan{
+    display:flex;
+    align-items:center;
+}
+
+.aboutPotepanWrapper{
+    background-color:orange;
+    padding:40px 50px;
+}
+
+.aboutPotepanVideo{
+    width:50%;
+}
+.aboutPotepanBox{
+    color:white;
+    margin-left:30px;
+}
+
+h2{
+    font-size:38px;
+}
+
+.aboutPotepanParagraph{
+    font-size:16px;
+}
+
+.contentHere{
+    color:white;
+    font-size:18px;
+    display:inline-flex;
+    align-items:center;
+}
+
+.fixedCounsellimgHere{
+    position:fixed;
+    bottom:30px;
+    right:5px;
+}
+.fixedCounsellimgHere img{
+    max-width:350px;
+    display:block;
+}
+
+@media screen and (min-width: 1081px){
+    .hamburgerMenu{
+        display:none;
+}
+}
+    
+@media screen and (max-width: 1080px){
+header{
+    position: fixed !important;
+    top:0px;
+    background-color:white;
+}
+main{
+    margin-top:60px;
+}
+.headerList{
+    display: none;
+}
+}
+
+@media screen and (max-width: 1024px){
+.aboutPotepan{
+    flex-direction:column;
+}
+.aboutPotepanVideo{
+    width:75%;
+}
+.aboutPotepanBox{
+    width:75%;
+    margin: 0px;
+}
+}
+
+@media screen and (min-width: 768px){
+.firstViewImg{
+    display:none;
+}
+}
+
+@media screen and (max-width: 767px){
+.firstView{
+    background-image:none;
+    padding:0px;
+}
+.firstViewBox{
+    width:auto;
+    margin-top:-50vw;
+    padding:0px 20px;
+}    
+h1{
+    font-size:25px;
+}
+.firstViewBox2{
+    justify-content:space-between;
+}
+.firstViewBox2 img:nth-of-type(2n+1){
+    width:30%;
+}
+.firstViewBox2 img:nth-of-type(2){
+    width:40%;
+}
+.documentHere{
+    display:none !important;
+}
+.counsellingHere{
+    width:100%;
+    margin:0px;
+}
+.aboutPotepanVideo{
+    width:100%;
+}
+.aboutPotepanBox{
+    width:100%;
+}
+}
+
+@media screen and (max-width: 428px){
+.fixedCounsellimgHere{
+    width:100%;
+    background-color:white;
+    bottom:0px;
+    right:0px;
+}
+.fixedCounsellimgHere img{
+    width:98%;
+    margin:0px auto 30px;
+}
+}
